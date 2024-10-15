@@ -27,7 +27,7 @@ $applicants = seeAllApplicants($pdo);
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #e0f7fa; /* Light blue background */
             margin: 0;
             padding: 0;
             display: flex;
@@ -37,16 +37,21 @@ $applicants = seeAllApplicants($pdo);
         }
         .container {
             background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             width: 100%;
-            max-width: 1000px;
+            max-width: 900px;
             margin-top: 20px;
         }
-        h1 {
+        h1, h2 {
             text-align: center;
-            color: #333;
+            color: #00796b; /* Teal color for headings */
+        }
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
         }
         form {
             display: flex;
@@ -58,22 +63,24 @@ $applicants = seeAllApplicants($pdo);
         }
         input, textarea, button {
             margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
             font-size: 16px;
-            width: 97%;
+            width: 100%;
+            box-sizing: border-box;
         }
         button {
-            background-color: #28a745;
+            background-color: #00796b;
             color: #fff;
             cursor: pointer;
             border: none;
-            width: auto;
-            padding: 10px 20px;
+            padding: 12px;
+            border-radius: 6px;
+            transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #218838;
+            background-color: #004d40;
         }
         .table-container {
             margin-top: 40px;
@@ -83,17 +90,19 @@ $applicants = seeAllApplicants($pdo);
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            margin-bottom: 20px;
         }
         table, th, td {
             border: 1px solid #ddd;
         }
         th, td {
-            padding: 10px;
+            padding: 12px;
             text-align: center;
         }
         th {
-            background-color: #f8f8f8;
+            background-color: #b2dfdb; /* Light teal for table headers */
+        }
+        td {
+            background-color: #f9f9f9;
         }
         .center-text {
             text-align: center;
